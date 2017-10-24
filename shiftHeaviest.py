@@ -8,7 +8,7 @@ def shiftHeaviest(givenList,index,tempIndex=0):
 	Return Value		: None.
 	'''
 	#Approach		: To swap the number to right if it is larger than the other number 
-	#					  and recursively doing till it reaches to desired index. 
+	#			  and recursively doing till it reaches to desired index. 
 
 	if tempIndex!=index:
 		if givenList[tempIndex]>givenList[tempIndex+1]:
@@ -20,8 +20,7 @@ def shiftHeaviest(givenList,index,tempIndex=0):
 		else:
 			tempIndex=tempIndex+1
 			shiftHeaviest(givenList,index,tempIndex)
-	else:
-		return
+	return
 
 def main():
 	'''
