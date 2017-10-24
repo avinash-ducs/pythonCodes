@@ -1,11 +1,10 @@
 def pigLatinEncryption(string):
 	'''
-	Objective			: To encrypt a given word into Pig Latin word.
-	Input Parameters	: 
-			string      : String entered by user to convert into Pig Latin form.
+	Objective		: To encrypt a given word into Pig Latin word.
+	Input Parameters	: string: String entered by user to convert into Pig Latin form.
 	Return Values		: pigLatinWord
 	'''
-	#Approach			: Use string methods and concatenation to convert the given word into Pig Latin form.
+	#Approach		: Use string methods and concatenation to convert the given word into Pig Latin form.
 
 	ayString='ay'
 	tempCharacter=string[0]
@@ -14,12 +13,11 @@ def pigLatinEncryption(string):
 
 def pigLatinDecryption(string):
 	'''
-	Objective			: To decrypt a given Pig Latin form word into original word.
-	Input Parameters	: 
-			string      : Pig Latin form string.
+	Objective		: To decrypt a given Pig Latin form word into original word.
+	Input Parameters	: string: Pig Latin form string.
 	Return Values		: decryptedWord
 	'''
-	#Approach			: Use string methods and concatenation to convert the given Pig Latin form into original word.
+	#Approach		: Use string methods and concatenation to convert the given Pig Latin form into original word.
 
 	tempCharacter=string[-3]
 	decryptedWord=tempCharacter+string[:len(string)-3]
@@ -27,11 +25,11 @@ def pigLatinDecryption(string):
 	
 def main():
 	'''
-	Objective			: To encrypt and decrypt a given word into Pig Latin word and vice versa respectively.
+	Objective		: To encrypt and decrypt a given word into Pig Latin word and vice versa respectively.
 	Input Parameters	: None.
 	Return Values		: None.
 	'''
-	#Approach			: Invoke pigLatinEncryption and pigLatinDecryption functions.
+	#Approach		: Invoke pigLatinEncryption and pigLatinDecryption functions.
 
 
 	string=input("Input a word: ")
